@@ -2,6 +2,8 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8" />
+<script>/* 자바스크립트가 켜져 있을 때만 KR | EN 버튼을 보임니다(빠른 보기·미리보기에선 한국어판 그대로). */
+document.documentElement.classList.add('js-on');</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>밤톨도반 | 굳은 마음을 녹이는 명상 여정</title>
 <meta name="description" content="밤톨도반 — 조금은 굳어진 몸과 마음에 부드러운 쉼. 온라인에서 함께 걷는 1:1 · 소그룹 마음챙김 명상 코칭." />
@@ -1086,7 +1088,7 @@ h1 .line{display:block;white-space:nowrap;}
   gap:18px;
 }
 .lang-switch{
-  display:inline-flex;
+  display:none;
   align-items:center;
   flex:0 0 auto;
   padding:3px;
@@ -1094,6 +1096,7 @@ h1 .line{display:block;white-space:nowrap;}
   border:1px solid rgba(43,33,27,.14);
   background:rgba(255,255,255,.5);
 }
+html.js-on .lang-switch{display:inline-flex;}
 .lang-btn{
   -webkit-appearance:none;
   appearance:none;
